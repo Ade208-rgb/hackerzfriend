@@ -1,0 +1,1 @@
+function setTheme(c){document.body.style.backgroundColor=c==='dark'?'black':c==='green'?'#002b00':'#2b0000';document.body.style.color=c==='dark'?'white':'lime'}

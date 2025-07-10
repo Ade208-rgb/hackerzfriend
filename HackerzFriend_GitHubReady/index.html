@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HackerzFriend Cipher Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="theme-switcher">
+    <button onclick="setTheme('dark')">Dark</button>
+    <button onclick="setTheme('green')">Green</button>
+    <button onclick="setTheme('red')">Red</button>
+  </div>
+  <h1>HackerzFriend Cipher Tool</h1>
+  <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+  <div>
+    <select id="cipherSelect">
+      <option value="caesar">Caesar</option>
+      <option value="vigenere">Vigenère</option>
+      <option value="xor">XOR</option>
+      <option value="base64">Base64</option>
+      <option value="atbash">Atbash</option>
+      <option value="rot13">ROT13</option>
+      <option value="reverse">Reverse</option>
+    </select>
+    <button onclick="addCipher()">Add Cipher</button>
+    <ul id="cipherChainList"></ul>
+  </div>
+  <button onclick="encrypt()">Encrypt</button>
+  <button onclick="decrypt()">Decrypt</button>
+  <button onclick="clearAll()">Clear</button>
+  <pre id="outputBox"></pre>
+  <script src="themes.js"></script>
+  <script src="cipher.js"></script>
+</body>
+</html>
